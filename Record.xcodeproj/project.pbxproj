@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E5D7F0523BAA2C000A9A506 /* Record WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5E5D7F0423BAA2C000A9A506 /* Record WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5E5D7F0B23BAA2C000A9A506 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D7F0923BAA2C000A9A506 /* Interface.storyboard */; };
+		5E5D7F0D23BAA2C200A9A506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D7F0C23BAA2C200A9A506 /* Assets.xcassets */; };
+		5E5D7F1423BAA2C200A9A506 /* Record WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5E5D7F1323BAA2C200A9A506 /* Record WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5E5D7F1923BAA2C200A9A506 /* LandingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D7F1823BAA2C200A9A506 /* LandingScreenView.swift */; };
+		5E5D7F1B23BAA2C200A9A506 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D7F1A23BAA2C200A9A506 /* HostingController.swift */; };
+		5E5D7F1D23BAA2C200A9A506 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D7F1C23BAA2C200A9A506 /* ExtensionDelegate.swift */; };
+		5E5D7F1F23BAA2C300A9A506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D7F1E23BAA2C300A9A506 /* Assets.xcassets */; };
+		5E5D7F2223BAA2C300A9A506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D7F2123BAA2C300A9A506 /* Preview Assets.xcassets */; };
+		5E853EE123BE3ACB0045D219 /* BluetoothDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E853EE023BE3ACB0045D219 /* BluetoothDevicesView.swift */; };
+		5E853EE323BE44150045D219 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E853EE223BE44150045D219 /* Double+Extension.swift */; };
+		5E853EE823BE449B0045D219 /* BluetoothViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E853EE723BE449B0045D219 /* BluetoothViewModel.swift */; };
+		5E853EEA23BE451E0045D219 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E853EE923BE451E0045D219 /* DeviceModel.swift */; };
+		5E853EEC23BE47B80045D219 /* AccelerometerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E853EEB23BE47B80045D219 /* AccelerometerModel.swift */; };
+		5E853EEE23BE480F0045D219 /* AccelerometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E853EED23BE480F0045D219 /* AccelerometerViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E5D7F0623BAA2C000A9A506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E5D7EFA23BAA2BF00A9A506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E5D7F0323BAA2C000A9A506;
+			remoteInfo = "Record WatchKit App";
+		};
+		5E5D7F1523BAA2C200A9A506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E5D7EFA23BAA2BF00A9A506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E5D7F1223BAA2C200A9A506;
+			remoteInfo = "Record WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E5D7F2923BAA2C300A9A506 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5E5D7F1423BAA2C200A9A506 /* Record WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E5D7F2D23BAA2C300A9A506 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5E5D7F0523BAA2C000A9A506 /* Record WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5E5D7F0023BAA2BF00A9A506 /* Record.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Record.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5D7F0423BAA2C000A9A506 /* Record WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Record WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5D7F0A23BAA2C000A9A506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5E5D7F0C23BAA2C200A9A506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E5D7F0E23BAA2C200A9A506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E5D7F1323BAA2C200A9A506 /* Record WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Record WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5D7F1823BAA2C200A9A506 /* LandingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenView.swift; sourceTree = "<group>"; };
+		5E5D7F1A23BAA2C200A9A506 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		5E5D7F1C23BAA2C200A9A506 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5E5D7F1E23BAA2C300A9A506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E5D7F2123BAA2C300A9A506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E5D7F2323BAA2C300A9A506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E853EE023BE3ACB0045D219 /* BluetoothDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevicesView.swift; sourceTree = "<group>"; };
+		5E853EE223BE44150045D219 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		5E853EE723BE449B0045D219 /* BluetoothViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewModel.swift; sourceTree = "<group>"; };
+		5E853EE923BE451E0045D219 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		5E853EEB23BE47B80045D219 /* AccelerometerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerModel.swift; sourceTree = "<group>"; };
+		5E853EED23BE480F0045D219 /* AccelerometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E5D7F1023BAA2C200A9A506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E5D7EF923BAA2BF00A9A506 = {
+			isa = PBXGroup;
+			children = (
+				5E5D7F0823BAA2C000A9A506 /* Record WatchKit App */,
+				5E5D7F1723BAA2C200A9A506 /* Record WatchKit Extension */,
+				5E5D7F0123BAA2BF00A9A506 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E5D7F0123BAA2BF00A9A506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D7F0023BAA2BF00A9A506 /* Record.app */,
+				5E5D7F0423BAA2C000A9A506 /* Record WatchKit App.app */,
+				5E5D7F1323BAA2C200A9A506 /* Record WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E5D7F0823BAA2C000A9A506 /* Record WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D7F0923BAA2C000A9A506 /* Interface.storyboard */,
+				5E5D7F0C23BAA2C200A9A506 /* Assets.xcassets */,
+				5E5D7F0E23BAA2C200A9A506 /* Info.plist */,
+			);
+			path = "Record WatchKit App";
+			sourceTree = "<group>";
+		};
+		5E5D7F1723BAA2C200A9A506 /* Record WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D7F1A23BAA2C200A9A506 /* HostingController.swift */,
+				5E5D7F1C23BAA2C200A9A506 /* ExtensionDelegate.swift */,
+				5E853EE623BE446C0045D219 /* LandingStreen */,
+				5E853EE423BE44470045D219 /* BluetoothDevicesList */,
+				5E853EE523BE445B0045D219 /* Extensions */,
+				5E5D7F1E23BAA2C300A9A506 /* Assets.xcassets */,
+				5E5D7F2323BAA2C300A9A506 /* Info.plist */,
+				5E5D7F2023BAA2C300A9A506 /* Preview Content */,
+			);
+			path = "Record WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5E5D7F2023BAA2C300A9A506 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D7F2123BAA2C300A9A506 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E853EE423BE44470045D219 /* BluetoothDevicesList */ = {
+			isa = PBXGroup;
+			children = (
+				5E853EE023BE3ACB0045D219 /* BluetoothDevicesView.swift */,
+				5E853EE723BE449B0045D219 /* BluetoothViewModel.swift */,
+				5E853EE923BE451E0045D219 /* DeviceModel.swift */,
+			);
+			path = BluetoothDevicesList;
+			sourceTree = "<group>";
+		};
+		5E853EE523BE445B0045D219 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E853EE223BE44150045D219 /* Double+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E853EE623BE446C0045D219 /* LandingStreen */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D7F1823BAA2C200A9A506 /* LandingScreenView.swift */,
+				5E853EEB23BE47B80045D219 /* AccelerometerModel.swift */,
+				5E853EED23BE480F0045D219 /* AccelerometerViewModel.swift */,
+			);
+			path = LandingStreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E5D7EFF23BAA2BF00A9A506 /* Record */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E5D7F2E23BAA2C300A9A506 /* Build configuration list for PBXNativeTarget "Record" */;
+			buildPhases = (
+				5E5D7EFE23BAA2BF00A9A506 /* Resources */,
+				5E5D7F2D23BAA2C300A9A506 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E5D7F0723BAA2C000A9A506 /* PBXTargetDependency */,
+			);
+			name = Record;
+			productName = Record;
+			productReference = 5E5D7F0023BAA2BF00A9A506 /* Record.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		5E5D7F0323BAA2C000A9A506 /* Record WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E5D7F2A23BAA2C300A9A506 /* Build configuration list for PBXNativeTarget "Record WatchKit App" */;
+			buildPhases = (
+				5E5D7F0223BAA2C000A9A506 /* Resources */,
+				5E5D7F2923BAA2C300A9A506 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E5D7F1623BAA2C200A9A506 /* PBXTargetDependency */,
+			);
+			name = "Record WatchKit App";
+			productName = "Record WatchKit App";
+			productReference = 5E5D7F0423BAA2C000A9A506 /* Record WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5E5D7F1223BAA2C200A9A506 /* Record WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E5D7F2623BAA2C300A9A506 /* Build configuration list for PBXNativeTarget "Record WatchKit Extension" */;
+			buildPhases = (
+				5E5D7F0F23BAA2C200A9A506 /* Sources */,
+				5E5D7F1023BAA2C200A9A506 /* Frameworks */,
+				5E5D7F1123BAA2C200A9A506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Record WatchKit Extension";
+			productName = "Record WatchKit Extension";
+			productReference = 5E5D7F1323BAA2C200A9A506 /* Record WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E5D7EFA23BAA2BF00A9A506 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Dragos Resetnic";
+				TargetAttributes = {
+					5E5D7EFF23BAA2BF00A9A506 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					5E5D7F0323BAA2C000A9A506 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					5E5D7F1223BAA2C200A9A506 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 5E5D7EFD23BAA2BF00A9A506 /* Build configuration list for PBXProject "Record" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E5D7EF923BAA2BF00A9A506;
+			productRefGroup = 5E5D7F0123BAA2BF00A9A506 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E5D7EFF23BAA2BF00A9A506 /* Record */,
+				5E5D7F0323BAA2C000A9A506 /* Record WatchKit App */,
+				5E5D7F1223BAA2C200A9A506 /* Record WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E5D7EFE23BAA2BF00A9A506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E5D7F0223BAA2C000A9A506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5D7F0D23BAA2C200A9A506 /* Assets.xcassets in Resources */,
+				5E5D7F0B23BAA2C000A9A506 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E5D7F1123BAA2C200A9A506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5D7F2223BAA2C300A9A506 /* Preview Assets.xcassets in Resources */,
+				5E5D7F1F23BAA2C300A9A506 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E5D7F0F23BAA2C200A9A506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E853EE123BE3ACB0045D219 /* BluetoothDevicesView.swift in Sources */,
+				5E5D7F1B23BAA2C200A9A506 /* HostingController.swift in Sources */,
+				5E853EEE23BE480F0045D219 /* AccelerometerViewModel.swift in Sources */,
+				5E853EEA23BE451E0045D219 /* DeviceModel.swift in Sources */,
+				5E5D7F1923BAA2C200A9A506 /* LandingScreenView.swift in Sources */,
+				5E853EE323BE44150045D219 /* Double+Extension.swift in Sources */,
+				5E5D7F1D23BAA2C200A9A506 /* ExtensionDelegate.swift in Sources */,
+				5E853EE823BE449B0045D219 /* BluetoothViewModel.swift in Sources */,
+				5E853EEC23BE47B80045D219 /* AccelerometerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E5D7F0723BAA2C000A9A506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E5D7F0323BAA2C000A9A506 /* Record WatchKit App */;
+			targetProxy = 5E5D7F0623BAA2C000A9A506 /* PBXContainerItemProxy */;
+		};
+		5E5D7F1623BAA2C200A9A506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E5D7F1223BAA2C200A9A506 /* Record WatchKit Extension */;
+			targetProxy = 5E5D7F1523BAA2C200A9A506 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E5D7F0923BAA2C000A9A506 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E5D7F0A23BAA2C000A9A506 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E5D7F2423BAA2C300A9A506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E5D7F2523BAA2C300A9A506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E5D7F2723BAA2C300A9A506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Record WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = M4A2Y7ZWMN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Record WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dreamcraft.Record.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		5E5D7F2823BAA2C300A9A506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Record WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = M4A2Y7ZWMN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Record WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Dreamcraft.Record.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		5E5D7F2B23BAA2C300A9A506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4A2Y7ZWMN;
+				IBSC_MODULE = Record_WatchKit_Extension;
+				INFOPLIST_FILE = "Record WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Dreamcraft.Record.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		5E5D7F2C23BAA2C300A9A506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4A2Y7ZWMN;
+				IBSC_MODULE = Record_WatchKit_Extension;
+				INFOPLIST_FILE = "Record WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Dreamcraft.Record.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		5E5D7F2F23BAA2C300A9A506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4A2Y7ZWMN;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dreamcraft.Record;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5E5D7F3023BAA2C300A9A506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4A2Y7ZWMN;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dreamcraft.Record;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E5D7EFD23BAA2BF00A9A506 /* Build configuration list for PBXProject "Record" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5D7F2423BAA2C300A9A506 /* Debug */,
+				5E5D7F2523BAA2C300A9A506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E5D7F2623BAA2C300A9A506 /* Build configuration list for PBXNativeTarget "Record WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5D7F2723BAA2C300A9A506 /* Debug */,
+				5E5D7F2823BAA2C300A9A506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E5D7F2A23BAA2C300A9A506 /* Build configuration list for PBXNativeTarget "Record WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5D7F2B23BAA2C300A9A506 /* Debug */,
+				5E5D7F2C23BAA2C300A9A506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E5D7F2E23BAA2C300A9A506 /* Build configuration list for PBXNativeTarget "Record" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5D7F2F23BAA2C300A9A506 /* Debug */,
+				5E5D7F3023BAA2C300A9A506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E5D7EFA23BAA2BF00A9A506 /* Project object */;
+}
